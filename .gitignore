@@ -361,3 +361,86 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Esse arquivo .gitignore deve ser colocado na raiz do seu projeto Unity.
+
+# Pastas geradas pelo Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]serSettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Arquivos de metadados de assets devem ser versionados, mas caso o asset correspondente
+# seja ignorado, o metadado também deve ser. A linha abaixo garante que os .meta não sejam
+# ignorados por uma regra global.
+!/[Aa]ssets/**/*.meta
+
+# Arquivos de IDEs e ferramentas de desenvolvimento
+# Visual Studio
+.vs/
+.vscode/
+*.sln
+*.csproj
+*.unityproj
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# JetBrains Rider
+.idea/
+*.sln.DotSettings.user
+
+# Cache do Gradle (para builds Android)
+.gradle/
+
+# Arquivos de sistema operacional
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+
+# Arquivos gerados em builds
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Relatórios de crash do Unity
+sysinfo.txt
+crashlytics-build.properties
+
+# Assets do Addressables empacotados
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# Arquivos de backup do Blender (usados na importação de modelos)
+*.blend1
+*.blend2
+
+# Cache de testes do Unity
+/[Tt]estResults/
+
+# Pacotes de Asset Store (descomente se não quiser versioná-los)
+# /[Aa]ssets/AssetStoreTools*
+
+# Arquivos temporários do Collab
+/[Aa]ssets/Editor Default Resources/Collab/Download/
+
+# Arquivos de configuração do Plastic SCM
+*.plastic
