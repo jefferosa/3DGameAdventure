@@ -5,6 +5,8 @@ public class Player : MonoBehaviour
     public float moveSpeed;
     public float rotationSpeed;
 
+    public ParticleSystem slashEffect;
+
     CharacterController controller;
     Animator animator;
 
@@ -42,7 +44,7 @@ public class Player : MonoBehaviour
 
         inputDirection = new Vector3(horizontal, 0f, vertical);
 
-        if (inputDirection != Vector3.zero)
+        if (inputDirection != Vector3.zero && !isAttacking)
         {
             //calculo para onde o player deve olhar
             Quaternion targetRotation = Quaternion.LookRotation(inputDirection);
@@ -82,6 +84,8 @@ public class Player : MonoBehaviour
             animator.SetTrigger("Attack");
             isAttacking = true;
             attackCooldown = 0.6f; // tempo de cooldown do ataque
+            
+            slashEffect.Play();
         }
 
         if (Input.GetKeyDown(KeyCode.F1) && !isAttacking2)
